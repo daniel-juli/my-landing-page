@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jira Widget - Glassix</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fb;
+    }
+    header {
+      background-color: #2d6cdf;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      padding: 1.5rem;
+    }
+    .ticket {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .ticket h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #2d6cdf;
+    }
+    .ticket p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
+    }
+    .status {
+      font-weight: bold;
+      padding: 0.2rem 0.5rem;
+      background: #d3e5ff;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from Netlify 👋</h1>
-  <p>This is a simple landing page deployed with love 💙</p>
+
+  <header>
+    <h1>Jira Tickets Viewer</h1>
+    <p>Live updates from Jira inside your Glassix widget</p>
+  </header>
+
+  <div class="container">
+    <!-- Placeholder ticket cards -->
+    <div class="ticket">
+      <h3>🔧 GLX-245: WhatsApp Template Sync Fails</h3>
+      <p><strong>Created by:</strong> Daniel Juli</p>
+      <p><strong>Last updated:</strong> 2025-07-01</p>
+      <span class="status">In Progress</span>
+    </div>
+
+    <div class="ticket">
+      <h3>🐞 GLX-233: Email Signature Not Rendering</h3>
+      <p><strong>Created by:</strong> QA Bot</p>
+      <p><strong>Last updated:</strong> 2025-06-28</p>
+      <span class="status">Resolved</span>
+    </div>
+  </div>
+
 </body>
 </html>
